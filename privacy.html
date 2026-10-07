@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AudioPortal – zásady ochrany soukromí</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="lang"><a href="#en">English</a> · <a href="./">AudioPortal</a></p>
+<h1>Zásady ochrany soukromí</h1>
+<p class="muted">AudioPortal pro Android · platné od 7. října 2026</p>
+
+<div class="card">
+<p><strong>Stručně:</strong> AudioPortal nemá žádný vlastní server. Nic o tobě neshromažďuje, neposílá vývojáři ani třetím stranám a neobsahuje reklamy, analytiku ani sledování. Vše, co aplikace ukládá, zůstává v tvém zařízení.</p>
+</div>
+
+<h2>Co aplikace ukládá v zařízení</h2>
+<ul>
+<li>Seznam napojených složek a údaje o skladbách v nich (názvy, štítky, délky, obaly).</li>
+<li>Playlisty, skupiny, místo, kde jsi skončil, rychlost a nastavení zvuku.</li>
+<li>Oblíbené a nedávno hrané rozhlasové stanice a odebírané podcasty.</li>
+<li>Adresy serverů, které přidáš (Samba, DLNA, Nextcloud/WebDAV, SFTP), přihlašovací jméno a heslo nebo soukromý klíč. Hesla a klíče jsou šifrované klíčem v Android Keystore, který zařízení neopustí.</li>
+<li>Stažené soubory pro poslech offline a mezipaměť přehraného zvuku.</li>
+</ul>
+<p>Tato data smažeš odinstalováním aplikace nebo vymazáním jejích dat v nastavení Androidu. Pokud máš zapnuté zálohování Androidu, systém může data aplikace zálohovat do tvého účtu Google podle tvého nastavení; zašifrovaná hesla se po obnovení na jiném zařízení nedají použít.</p>
+
+<h2>Google Disk</h2>
+<p>Pokud napojíš Google Disk, aplikace požádá o oprávnění <code>drive.readonly</code> (jen čtení). Používá ho pouze k tomu, aby zobrazila složky, které procházíš, četla zvukové soubory a obrázky z napojených složek a ukázala v Nastavení e-mail přihlášeného účtu. Soubory nikdy nemění ani nemaže. Data z Disku se přenášejí přímo mezi tvým zařízením a servery Googlu a nikam jinam se neposílají. Přístup zrušíš v Nastavení aplikace (Odpojit účet) nebo na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>Používání a předávání informací získaných z Google API se řídí zásadami <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, včetně požadavků Limited Use.</p>
+
+<h2>Připojení k internetu a do sítě</h2>
+<p>Aplikace se připojuje jen tam, kam ji pošleš:</p>
+<ul>
+<li>ke Google Disku, pokud ho napojíš;</li>
+<li>k serverům ve tvé síti nebo na internetu, které přidáš;</li>
+<li>ke katalogu rozhlasových stanic <a href="https://www.radio-browser.info/">Radio Browser</a> při hledání stanic a ke streamům stanic, které pouštíš;</li>
+<li>k vyhledávání podcastů Apple (iTunes Search API) při hledání podcastu a k RSS kanálům a souborům podcastů, které odebíráš.</li>
+</ul>
+<p>Tyto služby vidí běžné údaje každého spojení (například IP adresu) podle svých vlastních zásad. Aplikace jim neposílá nic o tobě kromě toho, co je nutné pro samotný požadavek (např. hledaný text).</p>
+
+<h2>Oprávnění</h2>
+<ul>
+<li><strong>Přístup k síti a k místní síti</strong> – streamování a hledání serverů v domácí síti.</li>
+<li><strong>Oznámení a služba na popředí</strong> – ovládání přehrávání a stahování na pozadí.</li>
+<li>Aplikace nemá přístup k celému úložišti; vidí jen složky, které vybereš v systémovém okně.</li>
+</ul>
+
+<h2>Android Auto</h2>
+<p>V autě aplikace zobrazuje tvé záložky, playlisty, podcasty a stanice. Hlasové příkazy zpracovává systém (Asistent Google), aplikace dostane jen rozpoznaný text.</p>
+
+<h2>Děti</h2>
+<p>Aplikace není určena dětem a neshromažďuje žádné osobní údaje.</p>
+
+<h2>Změny a kontakt</h2>
+<p>Změny těchto zásad budou zveřejněny na této stránce. Dotazy můžeš položit přes <a href="https://github.com/RadekFurmanek/audioportal-web/issues">GitHub issues</a>.</p>
+
+<hr id="en">
+<h1>Privacy policy</h1>
+<p class="muted">AudioPortal for Android · effective 7 October 2026</p>
+
+<div class="card">
+<p><strong>In short:</strong> AudioPortal has no server of its own. It collects nothing about you, sends nothing to the developer or to third parties, and contains no ads, analytics or tracking. Everything the app stores stays on your device.</p>
+</div>
+
+<h2>What the app stores on your device</h2>
+<ul>
+<li>The folders you link and details of the tracks in them (names, tags, lengths, covers).</li>
+<li>Playlists, groups, where you stopped, speed and sound settings.</li>
+<li>Favourite and recently played radio stations and the podcasts you subscribe to.</li>
+<li>Addresses of servers you add (Samba, DLNA, Nextcloud/WebDAV, SFTP), the user name and the password or private key. Passwords and keys are encrypted with a key in the Android Keystore that never leaves the device.</li>
+<li>Files downloaded for offline listening and a cache of audio you have played.</li>
+</ul>
+<p>Uninstalling the app or clearing its data in Android settings deletes this data. If Android backup is on, the system may back up the app's data to your Google account according to your settings; encrypted passwords cannot be used after a restore on another device.</p>
+
+<h2>Google Drive</h2>
+<p>If you link Google Drive, the app asks for the <code>drive.readonly</code> permission (read only). It uses it only to show the folders you browse, to read audio files and pictures from linked folders, and to show the signed-in account's e-mail in Settings. It never changes or deletes files. Data from Drive travels directly between your device and Google's servers and is sent nowhere else. You can revoke access in the app's Settings (Disconnect account) or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>AudioPortal's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Internet and network connections</h2>
+<p>The app connects only where you send it:</p>
+<ul>
+<li>to Google Drive, if you link it;</li>
+<li>to servers on your network or on the internet that you add;</li>
+<li>to the <a href="https://www.radio-browser.info/">Radio Browser</a> station catalogue when you search for stations, and to the streams of stations you play;</li>
+<li>to Apple's podcast search (iTunes Search API) when you search for a podcast, and to the RSS feeds and episode files of podcasts you subscribe to.</li>
+</ul>
+<p>These services see the usual details of any connection (such as your IP address) under their own policies. The app sends them nothing about you beyond what the request itself needs (for example the search text).</p>
+
+<h2>Permissions</h2>
+<ul>
+<li><strong>Network and local network access</strong> – streaming and finding servers on your home network.</li>
+<li><strong>Notifications and foreground service</strong> – playback controls and downloads in the background.</li>
+<li>The app has no access to your whole storage; it sees only the folders you choose in the system window.</li>
+</ul>
+
+<h2>Android Auto</h2>
+<p>In the car the app shows your tabs, playlists, podcasts and stations. Voice commands are handled by the system (Google Assistant); the app receives only the recognised text.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no personal data.</p>
+
+<h2>Changes and contact</h2>
+<p>Changes to this policy will be published on this page. Questions are welcome via <a href="https://github.com/RadekFurmanek/audioportal-web/issues">GitHub issues</a>.</p>
+</main>
+</body>
+</html>
